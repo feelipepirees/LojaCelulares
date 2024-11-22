@@ -6,18 +6,17 @@
  
     class Inserir{
         function cadastrarPessoa(
-                                       Conexão $conexao,
+                                       Conexao $conexao,
                                        int $codigo,
                                        string $nome,
-                       
                                        string $endereco,
                                        string $telefone
  
         ){
             try{
                 $conn = $conexao->conectar();//Abrindo a conexão com o banco
-                $sql = "Insert into pessoa(codigo,nome, endereco,telefone)
-                        values('$codigo', '$nome', '$endereco', '$telefone')";
+                $sql = "Insert into pessoa(codigo,nome, telefone,endereço)
+                        values('$codigo', '$nome', '$telefone', '$endereco')";
                 $result = mysqli_query($conn, $sql);//Commit no banco
  
                 //Fechar a conexão com o banco

@@ -1,6 +1,5 @@
 <?php
      namespace PHP\Modelo;
-     require_once('DAO\CadastrarPessoa.php');
      require_once('DAO\Conexao.php');
      use PHP\Modelo\DAO\Conexao;
  

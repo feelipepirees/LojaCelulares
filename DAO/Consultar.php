@@ -5,13 +5,8 @@
  
     class Consultar{
         function consultarIndividual(
-                            Conexão $conexao,
+                            Conexao $conexao,
                             int $codigo
- 
- 
- 
- 
- 
         )
         {
             try{
